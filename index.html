@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meimei's Portofolio Website</title>
+    <!-- FAVICON  -->
+    <!-- <link rel="shortcutIcon" href=""> -->
+    <!-- remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- headeer -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                Meimei <span>Neo</span>
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">Skill</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portofolio" class="nav_link">Portofolio</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+                <!-- close btn -->
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle btn -->
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- main menu?  -->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <div class="home_data">
+                        <h3 class="home_subtitle">
+                            Hello, <span> I'm</span>
+                        </h3>
+                        <span class="home_title"></span>
+                        <p class="home_desc">
+                            Everyone call me Meimei. I was born in Tanjung Balai karimun,
+                            I currently live in Jakarta, and work as a mobile developer.
+                            My Hobby is create mobile application, website, and learn new things.
+                        </p>
+                        <div class="home_social">
+                            <a href="https://github.com/" target="_blank" class="home_social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="home_social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="square">                    
+                    <img src="assets/img/winniethepooh.png">
+                </div>
+            </div>
+        </section>
+        <!-- script home_title  -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".home_title", {
+                strings: ["Meimei Neo.", "Mobile Developer.", "Web Developer.", "Quallity Assurance.", "小吃货。"],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true,
+            });
+        </script>
+
+        <section class="about section" id="about">
+            <div class="about_container container grid">
+                <div class="squareBorder">
+                    <img src="assets/img/winniethepooh.png">
+                </div>
+                <div class="about_data">
+                    <h3 class="section_subtitle">
+                        My <span>Intro</span>
+                    </h3>
+                    <h2 class="section_title">
+                        About Me
+                    </h2>
+                    <p class="about_desc">
+                        I’ve been working as a Mobile developer for a year now, and I’m passionate about everything
+                        that goes into making mobile apps and websites works well and looks cool. Making web or mobile
+                        application is my passion because it’s where I can find the most exciting projects to work on.
+                        It’s also where I get to express my creativity in ways that are hard to find elsewhere.
+                    </p>
+                    <a href="#contact" class="btn">Let's talk</a>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <div class="skills_container container grid">
+                <div class="skills_data">
+                    <h3 class="section_subtitle">
+                        Favorite <span>Skills</span>
+                    </h3>
+                    <h2 class="section_title">
+                        My SKills
+                    </h2>
+                    <p class="skills_desc">
+                        see fully what skills i have and perform,
+                        to develop the project for you.
+                    </p>
+                    <a href="#project" class="btn">See Project</a>
+                </div>
+
+                <div class="skills_content">
+                    <div class="skill-tab-name">
+                        <p class="tab activelink" onclick="opentab('ProgramingSkills')">Skills</p>
+                        <p class="tab" onclick="opentab('Language')">Language</p>
+                        <p class="tab" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab-content" id="ProgramingSkills">
+                        <ul class="skills_group">
+                            <li class="skills_item">Java</li>
+                            <li class="skills_item">Javascript</li>
+                            <li class="skills_item">HTML & CSS</li>
+                            <li class="skills_item">Python</li>
+                            <li class="skills_item">SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Language">
+                        <ul class="skills_group">
+                            <li class="skills_item">Indonesia</li>
+                            <li class="skills_item">Mandarin</li>
+                            <li class="skills_item">English</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul class="skills_group">
+                            <li class="skills_item">Febuary 2015 - August 2018
+                                <br>
+                                <p>Mandarin translator at 沈氏佛堂[Shěn shì fó táng]</p>
+                            </li>
+                            <li class="skills_item">Maret 2021 - Maret 2022
+                                <br>
+                                <p>Quallity Assurance and Backend Developer in PT. Bank Sinarmas [Intern]</p>
+                            </li>
+                            <li class="skills_item">December 2022 - Current
+                                <br>
+                                <p>Junior Backend Developer at PT. Bank Sinarmas</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul class="skills_group">
+                            <li class="skills_item">2012 - 2013
+                                <br>
+                                <p>SMP Santo Yusup</p>
+                            </li>
+                            <li class="skills_item">2015 - 2018
+                                <br>
+                                <p>SMA Santo Yusup [IPA]</p>
+                            </li>
+                            <li class="skills_item">2018 - 2022
+                                <br>
+                                <p>Bina Nusantara University [Computer Science]</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    var tablinks = document.getElementsByClassName("tab");
+                    var tabcontents = document.getElementsByClassName("tab-content");
+                    function opentab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("activelink");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab-content");
+                        }
+                        event.currentTarget.classList.add("activelink");
+                        document.getElementById(tabname).classList.add("active-tab-content");
+                    }
+                </script>
+            </div>
+        </section>
+
+        <section class="portofolio section" id="portofolio">
+            <h3 class="section_subtitle">
+                My <span>Portofolio</span>
+            </h3>
+            <h2 class="section_title">
+                Recent Project
+            </h2>
+            <div class="projects_container container grid">
+                <article class="projects_card">
+                    <img src="assets/img/portofolio mobile.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card">
+                    <img src="assets/img/portofolio mobile.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card">
+                    <img src="assets/img/portofolio mobile.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card">
+                    <img src="assets/img/portofolio webpng.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card">
+                    <img src="assets/img/portofolio webpng.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card">
+                    <img src="assets/img/portofolio webpng.png" alt="projects image" class="projects_img">
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Mobile</span>
+                        <h2 class="projects_title">Mobile Application</h2>
+                        <a href="#" class="projects_btn">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h3 class="section_subtitle">
+                Get In <span>Touch</span>
+            </h3>
+            <h2 class="section_title">Contact Me</h2>
+            <div class="contact_container container grid">
+                <div class="contactInfo-left">
+                    <div class="contactList">
+                        <p><i class="ri-mail-fill"></i> meimei@gmail.com</p>
+                        <p><i class="ri-whatsapp-fill"></i> 0852 7777 8888</p>
+                        <p><i class="ri-twitter-fill"></i> @meimei</p>
+                        <p><i class="ri-instagram-fill"></i> @meimei </p>
+                    </div>
+                    <a href="https://docs.google.com/document/d/18-jD6ebJVl5jmVx-GQzUl31_yVCgtCJNqGoslorL--s/edit?usp=sharing"
+                        class="btn">
+                        Download CVe
+                    </a>
+                    <!-- <button class="btn CV_btn" type="submit">Download CV</button> -->
+                </div>
+                <form name="submit-to-google-sheet" action="" class="contact_form" id="contact-form">
+                    <div class="contact_group">
+                        <input type="name" name="username" required placeholder="Input Your Name" class="contact_input">
+                        <input type="email" name="userEmail" required placeholder="Input Your Email"
+                            class="contact_input">
+                    </div>
+                    <textarea name="userMessage" required placeholder="Input your message here"
+                        class="contact_input"></textarea>
+                    <!-- <p class="contact_message" id="contact_message">Message</p> -->
+                    <button class="btn contact_btn" type="submit">Send Message</button>
+                </form>
+                <span id="submittedStatus"></span>
+            </div>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbx3Y4Xt_FoIVKL4W2WzlsNqHwXe5UwA-hDgbNTIG4dEaNpeK54zL74g_Gxvp5xk8lWUUg/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const submit_status = document.getElementById("submittedStatus")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            submit_status.innerHTML = "Successfully Sended your message <3"
+                            setTimeout(function () {
+                                submit_status.innerHTML = ""
+                            }, 8000);
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <div>
+                <h1 class="footer_title">
+                    Meimei <span>Neo</span>
+                </h1>
+                <h2 class="footer_education">
+                    Developer
+                </h2>
+            </div>
+            <div class="footer_social">
+                <a href="https://www.facebook.com" target="_blank" class="footer_social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer_social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="footer_social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </div>
+            <span class="footer_copyright">
+                &#169; Copyright meimeiii. all rights reserved
+            </span>
+        </div>
+    </footer>
+
+    <!-- scrollbar -->
+    <a href="" class="scrollup" id="scrollup">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- scroll reveal -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- email js -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <!-- emailnya gagal -->
+</body>
+
+</html>
